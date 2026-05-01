@@ -1,0 +1,20 @@
+# If else ( to find Wheather user is available for vote or not )
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin>>age;
+    
+    if(age>=18) {
+        cout<< "Eligible for vote";
+    } else {
+        cout<<"Not Eligble For Vote";
+    }
+    return 0;
+}
+
+
+
+
