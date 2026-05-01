@@ -41,5 +41,24 @@ int main() {
         cout << "Not eligible for vote";
     }
 
+
+
+
+# code 3  (Implement maximum number calculation)
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int max_Number;
+    
+    cin >> a>> b;
+    max_Number = (a>b) ? a : b ;
+    cout<< max_Number;
+    return 0;
+}
+
+
     return 0;
 }
