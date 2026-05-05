@@ -88,7 +88,39 @@ int main () {
     
 }
 --------------------------------------------
+// Program 4.3 - Function ( no argument but return type ) 
 
+#include <iostream>
+using namespace std ;
+
+
+int ticketNumber() {
+    return 101;
+}
+
+int main () {
+    cout << ticketNumber();
+    return 0;
+    
+}
+--------------------------------------------------
+
+// Program 4.4 - Function (argument and return type ) 
+
+#include <iostream>
+using namespace std ;
+
+
+int currencyConversion(int amountInUSD) {
+    return amountInUSD / 100;
+}
+
+int main () {
+    cout << currencyConversion(200);
+    return 0;
+    
+}
+--------------------------------------------------------
 
 
 
