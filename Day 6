@@ -59,3 +59,69 @@ int main () {
 }
 -----------------------------------
 
+// problem 4 - coffee shop 
+
+#include <iostream>
+using namespace std;
+
+
+int calculateCost(int price, int quantity) {
+    int total = price * quantity;
+    return total;
+}
+
+int main() {
+    
+    int totalAmount = calculateCost(100, 5);
+
+    cout << "Total cost of coffee = " << totalAmount << " rupees";
+
+    return 0;
+}
+-------------------------------------------------------
+
+// problem 5 - Smart AC remote 
+// function Overloading 
+
+#include <iostream>
+using namespace std;
+
+
+void setTemprature(int temp = 22) {
+    cout << "Temperature set to " << temp << " Celsius" << endl;
+}
+
+
+void setTemprature(double temp) {
+    cout << "Temperature set to " << temp << " Celsius" << endl;
+}
+
+
+void setTemprature(string mode) {
+    if (mode=="ECO") {
+        cout << "Temp set to 24c" << endl ;
+        
+    } else if (mode == "TURBO") {
+        cout << "Temp set to 18c" << endl;
+    }
+    
+}
+
+int main() {
+    setTemprature();
+    cout << endl;
+
+    setTemprature(20.5);
+    cout << endl;
+
+    setTemprature("ECO");
+    cout << endl;
+
+    setTemprature("TURBO");
+
+    return 0;
+}
+----------------------------------------------------------------------
+
+
+
