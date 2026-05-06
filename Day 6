@@ -122,6 +122,60 @@ int main() {
     return 0;
 }
 ----------------------------------------------------------------------
+// problem 6 - classes and objects 
+
+#include <iostream>
+using namespace std ;
+
+class Student {
+    
+public:    
+    string name;
+    int age ;
+
+
+void introduce () {
+
+    cout << "Hi there , this person name is: " << name << endl << "age is: " << age << endl;
+
+}
+    
+
+};
+
+int main () {
+    Student s1 , s2;
+    s1.name = "ujjwal";
+    s1.age = 24;
+    s2.name = "Gujju";
+    s2.age = 22;
+    s1.introduce();
+    s2.introduce();
+}
+-------------------------------------------------------
+
+// program 7 - access modifiers 
+
+// 7.1 Public
+
+#include <iostream>
+using namespace std ;
+
+class PublicPark {
+public:
+void enter() {
+    cout << "Anyone can enter the park ...";
+}
+};
+
+
+int main () {
+    PublicPark p;
+    p.enter();
+    
+}
+----------------------------------------------
+
 
 
 
