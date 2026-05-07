@@ -49,5 +49,70 @@ int main () {
 }
 --------------------------------------------------------
 
+// program 3 - Constructors 
+// 3.1 - default 
+
+#include <iostream>
+using namespace std;
+
+class wifiConnection{
+
+public:
+    string networkName;
+    string password;
+    
+    wifiConnection() {
+        networkName = "ACTfibre";
+        password = " BJP won";
+    }
+
+public:   
+void showDetails() {
+    cout << "Network name is "<< networkName <<" and its password is"<< password;
+    
+    
+}
+    
+};
+
+int main () {
+    wifiConnection obj1;
+    
+    obj1.showDetails();
+}
+---------------------------------------------------------------
+// program 3 - Constructors 
+// 3.2 - parameterized 
+
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int id;
+    
+    Student(string studentName , int StudentID) {
+        name = studentName;
+        id = StudentID;
+    }
+
+
+
+public:
+void displayDetails() {
+    cout<< name<< " " <<id;
+}
+
+    
+};
+
+int main () {
+    Student std1("ujjwal", 101);
+    std1.displayDetails();
+}
+------------------------------------------------------------
+
+
 
 
