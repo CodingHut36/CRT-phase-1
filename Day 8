@@ -132,6 +132,77 @@ int main() {
     return 0;
 }
 --------------------------------------------------------
+// program 2 - Polymorphism 
+// 2.1 compile time overloading
+
+#include<iostream>
+using namespace std;
+
+int multiply (int a , int b) {
+    return a*b;
+}
+
+int multiply ( int a , int b , int c) {
+    return a*b*c ;
+}
+
+int main () {
+    int x,y,z ;
+    
+    cout << "Enter two numbers : " ;
+    cin >> x >> y;
+    
+    cout << "Multiplication of two numbers is : " << multiply(x,y) << endl;
+    
+    cout << "Enter three numbers : ";
+    cin >> x >> y >> z;
+    cout << "Product of three numbers is : " << multiply(x,y,z) << endl; 
+    
+    
+    return 0;
+    
+}
+------------------------------------------------------------------------
+// program 2 - Polymorphism 
+// 2.2 overriding 
+
+#include<iostream>
+using namespace std;
+
+class Animal {
+    public:
+    virtual void sound (){
+        cout << "Animal makes sound";
+    }
+};
+
+
+class Dog : public Animal {
+    public:
+    void sound () override {
+        cout << "Dog makes a sound" << endl;
+    }
+    
+};
+
+class Cat : public Animal {
+    public:
+    void sound () override {
+        cout << "Cat makes a sound";
+    }
+    
+};
+
+int main () {
+    Dog d ;
+    Cat c;
+    d.sound();
+    c.sound();
+}
+
+--------------------------------------------------------
+
+
 
 
 
