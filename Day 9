@@ -82,6 +82,74 @@ using namespace std;
  }
 ---------------------------------------------------
 
+// Program 3- Data structure  
+// Arrays 
+
+#include<iostream>
+using namespace std;
+
+ void traversal(int arr[] , int size) {
+    for(int i = 0; i < size ; i++) {
+        cout << arr[i] <<" " ;
+    }
+}
+
+int main () {
+    int arr[] = {10,20,30,40,50} ;
+    traversal(arr , 5);
+}
+-------------------------------------------------------
+// Program 4- Linear search 
+
+#include<iostream>
+using namespace std;
+
+int LinearSearch (int arr[] , int size , int targetValue) {
+    for(int i = 0; i< size ; i++) {
+        if (arr[i] == targetValue) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main () {
+    int arr[] = {10,20,30,40,50};
+    int targetIndex = LinearSearch(arr , 5 ,40);
+    cout << targetIndex;
+}
+----------------------------------------------------------
+
+// Program 5 - insert an alement in an array 
+
+#include<iostream>
+using namespace std;
+
+
+    void printArray ( int arr[] , int size) {
+        for (int i = 0; i<size ; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+}
+    void InsertElement (int arr[] , int &size , int index, int value){
+    for(int i = size; i> index ; i--) {
+        arr[i] = arr[i-1];
+    }
+    arr[index] = value;
+    size ++;
+}
+
+int main () {
+    int arr[] = {10,20,30,40,50};
+    int size = 5;
+    InsertElement(arr , size , 2 , 25);
+    printArray(arr , size);
+    
+    return 0;
+}
+----------------------------------------------------------
+
 
 
 
