@@ -50,6 +50,33 @@ int main()
 }
 
 ------------------------------------------------------------------
+// problem 3 
+// Recursion 
+
+class Solution {
+public:
+
+    int robFrom(vector<int>& nums , int index) {
+        if (index >=nums.size()) {
+            return 0;
+        }
+
+        int include = nums[index] + robFrom(nums , index + 2) ;
+        int exclude = robFrom(nums , index + 1);
+
+        return max (include , exclude) ;
+
+    }
+
+    int rob (vector <int>& nums) {
+        return robFrom(nums , 0);
+    }
+        
+    
+};
+
+------------------------------------------------------
+
 
   
 
